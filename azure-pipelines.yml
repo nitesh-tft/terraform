@@ -1,4 +1,10 @@
 # Go
+- task: AzureVmssDeployment@0
+  inputs:
+    azureSubscription: 'Visual Studio Enterprise Subscription – MPN(3a800d29-f646-41d7-9b04-1aa5c3ab82a6)'
+    action: 'Update image'
+    vmssName: 'auto_vm'
+    vmssOsType: 'Linux'
 # Build your Go project.
 # Add steps that test, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/go
